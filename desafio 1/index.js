@@ -9,13 +9,13 @@ class Usuario {
         return `${this.nombre} ${this.apellido}`
     }
     addMascota(mascota) {
-        return this.mascotas.push(mascota);
+        this.mascotas.push(mascota);
     }
     countMascotas() {
         return `${this.mascotas.length}`
     }
     addBook(nombre, autor) {
-        return this.libros.push({ nombre: nombre, autor: autor });
+        this.libros.push({ nombre: nombre, autor: autor });
     }
     getBookNames() {
         return this.libros.map(libro => `${libro.nombre}`);
